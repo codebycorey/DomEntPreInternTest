@@ -1,0 +1,228 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  //font-weight: 300;
+  /*background-color: #000000;*/
+}
+
+.container {
+  width: auto;
+  max-width: 1034px;
+  margin: 0 auto;
+}
+
+/* ============================================= */
+/* HEADER
+/* ============================================= */
+.header {
+  height: 435px;
+  margin-top: 0;
+  z-index: 1;
+}
+
+.bg {
+  float: left;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.header-tagline h1, h2 {
+  position: relative;
+  padding-left: 35px;
+  top: -325px;
+  color: #fff
+}
+
+.header-tagline h1 {
+  font-size: 106px;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-tagline h2 {
+  font-size: 65px;
+  font-weight: 100;
+  margin-top: -20px;
+  margin-bottom: 0;
+}
+
+/* ============================================= */
+/* Form
+/* ============================================= */
+
+.form-bg {
+  position: absolute;
+  margin-left: 35px;
+  width: 400px;
+  height: 350px;
+  background: #e9eaee;
+  border-radius: 10px;
+  float: left;
+}
+
+form div{
+  width: 320px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+form div:first-child {
+  margin-top: 30px;
+}
+
+form input,
+select,
+textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #aaaaaa;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+  width: 320px;
+}
+
+form .stars {
+  background: url(../img/gray-star.png) repeat-x 0 0;
+  background-size: 20px 20px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+form .stars input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+form .stars input[type="radio"].star-5:checked ~ span {
+  width: 100%;
+}
+form .stars input[type="radio"].star-4:checked ~ span {
+  width: 80%;
+}
+form .stars input[type="radio"].star-3:checked ~ span {
+  width: 60%;
+}
+form .stars input[type="radio"].star-2:checked ~ span {
+  width: 40%;
+}
+form .stars input[type="radio"].star-1:checked ~ span {
+  width: 20%;
+}
+form .stars label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-indent: -999em;
+  float: left;
+  position: relative;
+  z-index: 10;
+  background: transparent!important;
+  cursor: pointer;
+}
+form .stars label:hover ~ span {
+  //background-position: 0;
+}
+form .stars label.star-5:hover ~ span {
+  width: 100% !important;
+}
+form .stars label.star-4:hover ~ span {
+  width: 80% !important;
+}
+form .stars label.star-3:hover ~ span {
+  width: 60% !important;
+}
+form .stars label.star-2:hover ~ span {
+  width: 40% !important;
+}
+form .stars label.star-1:hover ~ span {
+  width: 20% !important;
+}
+form .stars span {
+  display: block;
+  width: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 20px;
+  background: url(../img/Blue-Star.png) repeat-x 0 0;
+  background-size: 20px 20px;
+}
+
+
+.submit {
+  margin-top: 25px;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input[type=submit] {
+  background: #fe830f;
+  color: #fff;
+  font-size: 18px;
+  border:none;
+  height: 36px;
+  width: 100%;
+}
+
+/* ============================================= */
+/* Right column
+/* ============================================= */
+
+.text {
+ // background: #000;
+  margin-left: 475px;
+  float: left;
+  width: 50%;
+}
+
+.text h3 {
+  margin: 0;
+  color: #0057a0;
+  font-size: 28px;
+}
+
+.text p {
+  font-size: 14px;
+  color: #666666;
+}
+
+.nav h3 {
+  font-size: 24px;
+  padding-left: 15px;
+  padding-top: 5px;
+  margin-left: 475px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  background: #fe830f;
+  float: left;
+  width: 135px;
+  height: 40px;
+}
+
+.nav h3:first-child {
+  margin-top: 25px;
+}
+
+.nav h3:nth-child(2){
+  background: #0057a0;
+}
+
+.nav h3:nth-child(3){
+  background: #666666;
+}
+
+

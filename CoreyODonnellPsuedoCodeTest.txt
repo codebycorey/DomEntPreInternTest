@@ -1,0 +1,26 @@
+Pseudo Code test
+Corey O'Donnell
+
+#1, State Real Estate Agents Directories should be reworded.
+I.e. Directories by state for Real Estate Agents
+
+#2, When I look at the content being displayed, my eyes tend to go down the column
+of the list instead of left to right. The alternating colors for each line help
+but not that much
+
+I would have the php loop through the list and display what was needed into a
+html table with a class="list*" which can later be formated with css to display
+next to each other.
+
+
+
+<?php
+echo "<table class=\"list1\">"
+for( $i = 0; i < $list.size()/2; i++) {
+  echo <tr>$list[i]</tr>
+}
+echo "<table class=\"list2\">"
+for( $i = $list.size()/2; i < $list.size(); i++) {
+  echo <tr>$list[i]</tr>
+}
+?>
